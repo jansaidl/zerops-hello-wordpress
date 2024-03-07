@@ -12,5 +12,3 @@ wp-content/themes/*
 !/wp-content/themes/twentytwentytwo/
 !/wp-content/themes/twentytwentythree/
 !/wp-content/themes/twentytwentyfour/
-
-# If using a global wp-content directory, adjust paths as needed
