@@ -1,7 +1,7 @@
 zerops:
   - setup: prodapp
     build:
-      base: php@8.0
+      base: php@8.1
       prepareCommands:
         - apt-get update && apt-get install -y mariadb-client
         - curl -sS https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o wp-cli.phar
@@ -28,7 +28,7 @@ zerops:
 
   - setup: devapp
     build:
-      base: php@8.0
+      base: php@8.1
       prepareCommands:
         - apt-get update && apt-get install -y mariadb-client
         - curl -sS https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o wp-cli.phar
