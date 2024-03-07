@@ -24,9 +24,11 @@ define( 'NONCE_SALT', getenv('WORDPRESS_NONCE_SALT') );
 define('WP_SITEURL', getenv('WORDPRESS_URL'));
 define('WP_HOME', getenv('WORDPRESS_URL'));
 
-// debug
+// core
 define( 'WP_DEBUG', getenv('WORDPRESS_DEBUG') );
 define( 'WP_DEBUG_DISPLAY', getenv('WORDPRESS_DEBUG_DISPLAY') );
+define( 'WORDPRESS_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
+define( 'WP_CONTENT_URL', getenv('WORDPRESS_URL') . '/wp-content');
 
 // plugins
 define( 'S3_UPLOADS_BUCKET', getenv('WORDPRESS_STORAGE_BUCKET') );
