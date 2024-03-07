@@ -46,7 +46,7 @@ if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
 }
 
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+	define( 'ABSPATH', __DIR__ . '/wp/' );
 }
 
-require_once ABSPATH . 'wp/wp-settings.php';
+require_once ABSPATH . '/wp-settings.php';
