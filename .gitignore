@@ -1,6 +1,7 @@
 # Composer dependencies
 /vendor/
 /wp/
+/wp-content/vendor
 
 # WordPress core
 !wp-content/

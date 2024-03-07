@@ -204,57 +204,6 @@
             "install-path": "../johnpbloch/wordpress"
         },
         {
-            "name": "johnpbloch/wordpress-core",
-            "version": "5.9.9",
-            "version_normalized": "5.9.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "9e7760b44a132a6b0040e13ce0c600d58f21d41f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9e7760b44a132a6b0040e13ce0c600d58f21d41f",
-                "reference": "9e7760b44a132a6b0040e13ce0c600d58f21d41f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.6.20"
-            },
-            "provide": {
-                "wordpress/core-implementation": "5.9.9"
-            },
-            "time": "2024-01-30T20:46:37+00:00",
-            "type": "wordpress-core",
-            "installation-source": "dist",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "WordPress Community",
-                    "homepage": "https://wordpress.org/about/"
-                }
-            ],
-            "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
-            "homepage": "https://wordpress.org/",
-            "keywords": [
-                "blog",
-                "cms",
-                "wordpress"
-            ],
-            "support": {
-                "forum": "https://wordpress.org/support/",
-                "irc": "irc://irc.freenode.net/wordpress",
-                "issues": "https://core.trac.wordpress.org/",
-                "source": "https://core.trac.wordpress.org/browser",
-                "wiki": "https://codex.wordpress.org/"
-            },
-            "install-path": "../../../wp"
-        },
-        {
             "name": "johnpbloch/wordpress-core-installer",
             "version": "2.0.0",
             "version_normalized": "2.0.0.0",

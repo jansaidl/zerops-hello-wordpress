@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'zerops/wordpress',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'd9e3d36d968dfa505dcf62ce7aa58dae4c76e83a',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../../',
         'aliases' => array(),
@@ -28,15 +28,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'johnpbloch/wordpress-core' => array(
-            'pretty_version' => '5.9.9',
-            'version' => '5.9.9.0',
-            'reference' => '9e7760b44a132a6b0040e13ce0c600d58f21d41f',
-            'type' => 'wordpress-core',
-            'install_path' => __DIR__ . '/../../../wp',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'johnpbloch/wordpress-core-installer' => array(
             'pretty_version' => '2.0.0',
             'version' => '2.0.0.0',
@@ -58,12 +49,6 @@
                 0 => '*',
             ),
         ),
-        'wordpress/core-implementation' => array(
-            'dev_requirement' => false,
-            'provided' => array(
-                0 => '5.9.9',
-            ),
-        ),
         'wpackagist-plugin/akismet' => array(
             'pretty_version' => '4.2.5',
             'version' => '4.2.5.0',
@@ -74,9 +59,9 @@
             'dev_requirement' => false,
         ),
         'zerops/wordpress' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'd9e3d36d968dfa505dcf62ce7aa58dae4c76e83a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../../',
             'aliases' => array(),
