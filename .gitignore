@@ -9,6 +9,4 @@ wp-content/plugins/*
 wp-content/themes/*
 
 # Include manually managed plugins and themes
-!/wp-content/themes/twentytwentytwo/
-!/wp-content/themes/twentytwentythree/
 !/wp-content/themes/twentytwentyfour/
