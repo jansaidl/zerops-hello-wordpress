@@ -16,4 +16,3 @@ zerops:
           wp plugin activate --all --allow-root
       deploy:
         - ./
-    run:
