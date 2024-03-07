@@ -178,14 +178,17 @@ services:
   - hostname: storage
     type: object-storage
     objectStorageSize: 2
+    pririty: 10
 
   - hostname: redis
     type: keydb@6
     mode: NON_HA
+    priority: 10
 
   - hostname: db
     type: mariadb@10.6
     mode: NON_HA
+    priority: 10
 
   - hostname: adminer
     type: php-apache@8.0+2.4
@@ -193,4 +196,5 @@ services:
     enableSubdomainAccess: true
     minContainers: 1
     maxContainers: 1
+    priority: 10
 ```
