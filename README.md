@@ -198,5 +198,4 @@ services:
     enableSubdomainAccess: true
     minContainers: 1
     maxContainers: 1
-    priority: 10
 ```
