@@ -19,8 +19,8 @@
     "config": {
         "vendor-dir": "wp-content/vendor",
         "allow-plugins": {
-            "johnpbloch/wordpress-core-installer": true,
-            "composer/installers": true
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
         }
     },
     "repositories": [
