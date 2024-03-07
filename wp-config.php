@@ -21,7 +21,7 @@ define( 'LOGGED_IN_SALT', getenv('WORDPRESS_LOGGED_IN_SALT') );
 define( 'NONCE_SALT', getenv('WORDPRESS_NONCE_SALT') );
 
 // settings
-define('WP_SITEURL', getenv('WORDPRESS_URL'));
+define('WP_SITEURL', getenv('WORDPRESS_URL') . '/wp');
 define('WP_HOME', getenv('WORDPRESS_URL'));
 
 // core
