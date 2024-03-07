@@ -47,7 +47,7 @@ services:
       WORDPRESS_SECURE_AUTH_SALT: <@generateRandomString(<64>)>
 
       WORDPRESS_REDIS_USER_SESSION_HOST: ${redis_hostname}
-
+    minContainers: 1
     nginxConfig: |-
       server {
           listen 80;
@@ -130,6 +130,8 @@ services:
       WORDPRESS_SECURE_AUTH_SALT: <@generateRandomString(<64>)>
 
       WORDPRESS_REDIS_USER_SESSION_HOST: ${redis_hostname}
+    minContainers: 1
+    maxContainers: 1
     nginxConfig: |-
       server {
           listen 80;
