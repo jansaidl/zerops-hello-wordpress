@@ -1,0 +1,30 @@
+{
+    "name": "zerops/wordpress",
+    "require": {
+        "johnpbloch/wordpress": "^5.7",
+        "composer/installers": "^1.9",
+        "wpackagist-plugin/akismet": "^4.1"
+    },
+    "extra": {
+        "installer-paths": {
+          "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+          "wp-content/themes/{$name}/": ["type:wordpress-theme"],
+          "wp/": ["type:wordpress-core"]
+        },
+        "wordpress-install-dir": "wp"
+    },
+    "config": {
+        "vendor-dir": "wp-content/vendor",
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ]
+
+}

@@ -1,0 +1,14 @@
+# Composer dependencies
+/vendor/
+/wp/
+
+# WordPress core
+!wp-content/
+wp-content/plugins/*
+wp-content/themes/*
+
+# Include manually managed plugins and themes
+!/wp-content/plugins/your-manual-plugin/
+!/wp-content/themes/your-manual-theme/
+
+# If using a global wp-content directory, adjust paths as needed

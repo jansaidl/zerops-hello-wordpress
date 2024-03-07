@@ -1,0 +1,8 @@
+zerops:
+  setup: wp
+  build:
+    base: php@8.1
+    buildCommands:
+      - composer update
+    deploy:
+      - ./
