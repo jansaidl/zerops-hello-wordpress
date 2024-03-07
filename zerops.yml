@@ -11,7 +11,7 @@ zerops:
       buildCommands:
         - |
           export HTTP_X_FORWARDED_PROTO=https
-          composer --version
+          export COMPOSER_ALLOW_SUPERUSER=1
           composer install
           ls -l
           if ! $(wp core is-installed --allow-root); then
@@ -38,7 +38,7 @@ zerops:
       buildCommands:
         - |
           export HTTP_X_FORWARDED_PROTO=https
-          composer --version
+          export COMPOSER_ALLOW_SUPERUSER=1
           composer install
           ls -l
           if ! $(wp core is-installed --allow-root); then
