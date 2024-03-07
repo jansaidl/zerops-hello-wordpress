@@ -26,6 +26,7 @@ define('WP_HOME', getenv('WORDPRESS_URL'));
 
 // core
 define( 'WP_DEBUG', getenv('WORDPRESS_DEBUG') );
+define( 'WP_DEBUG_LOG', getenv('WORDPRESS_DEBUG_LOG') );
 define( 'WP_DEBUG_DISPLAY', getenv('WORDPRESS_DEBUG_DISPLAY') );
 define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
 define( 'WP_CONTENT_URL', getenv('WORDPRESS_URL') . '/wp-content');
