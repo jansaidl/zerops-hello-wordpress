@@ -6,3 +6,4 @@ zerops:
         - composer update
       deploy:
         - ./
+    run:
