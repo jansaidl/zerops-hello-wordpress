@@ -31,7 +31,7 @@ services:
       WORDPRESS_DEBUG_LOG: "false"
 
       WORDPRESS_DB_HOST: ${db_hostname}
-      WORDPRESS_DB_NAME: ${db_hostname}-prod
+      WORDPRESS_DB_NAME: ${db_hostname}_prod
       WORDPRESS_DB_PASSWORD: ${db_password}
       WORDPRESS_DB_USER: ${db_user}
       WORDPRESS_TABLE_PREFIX: wp_
@@ -114,7 +114,7 @@ services:
       WORDPRESS_DEBUG_LOG: "false"
 
       WORDPRESS_DB_HOST: ${db_hostname}
-      WORDPRESS_DB_NAME: ${db_hostname}-dev
+      WORDPRESS_DB_NAME: ${db_hostname}_dev
       WORDPRESS_DB_PASSWORD: ${db_password}
       WORDPRESS_DB_USER: ${db_user}
       WORDPRESS_TABLE_PREFIX: wp_
