@@ -1,4 +1,4 @@
-# Zerops Hello WordPress
+# Zerops Hello WordPress.
 
 ## Import yaml
 
