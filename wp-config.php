@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/wp-content/vendor/autoload.php';
 
 // database
 define( 'DB_NAME', getenv('WORDPRESS_DB_NAME') );
