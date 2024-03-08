@@ -10,11 +10,10 @@ zerops:
         - composer self-update
       buildCommands:
         - |
-          export HTTP_X_FORWARDED_PROTO=https
-          export COMPOSER_ALLOW_SUPERUSER=1
+          export HTTP_X_FORWARDED_PROTO=https COMPOSER_ALLOW_SUPERUSER=1
           composer install
-          if ! mysql -u$WORDPRESS_DB_USER -p$WORDPRESS_DB_PASSWORD -h$WORDPRESS_DB_HOST -e "SHOW DATABASES LIKE '$WORDPRESS_DB_NAME';" | grep -q "$WORDPRESS_DB_NAME"; then
-            mysql -u$WORDPRESS_DB_USER -p$WORDPRESS_DB_PASSWORD -h$WORDPRESS_DB_HOST -e "CREATE DATABASE $WORDPRESS_DB_NAME CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;" && echo "Database $WORDPRESS_DB_NAME created successfully."
+          if ! mysql -u"$WORDPRESS_DB_USER" -p"$WORDPRESS_DB_PASSWORD" -h"$WORDPRESS_DB_HOST" -e "SHOW DATABASES LIKE '$WORDPRESS_DB_NAME';" | grep -q "$WORDPRESS_DB_NAME"; then
+            mysql -u"$WORDPRESS_DB_USER" -p"$WORDPRESS_DB_PASSWORD" -h"$WORDPRESS_DB_HOST" -e "CREATE DATABASE \`$WORDPRESS_DB_NAME\` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;" && echo "Database $WORDPRESS_DB_NAME created successfully."
           else
             echo "Database $WORDPRESS_DB_NAME already exists. Skipping."
           fi
@@ -46,8 +45,8 @@ zerops:
           export HTTP_X_FORWARDED_PROTO=https
           export COMPOSER_ALLOW_SUPERUSER=1
           composer install
-          if ! mysql -u$WORDPRESS_DB_USER -p$WORDPRESS_DB_PASSWORD -h$WORDPRESS_DB_HOST -e "SHOW DATABASES LIKE '$WORDPRESS_DB_NAME';" | grep -q "$WORDPRESS_DB_NAME"; then
-            mysql -u$WORDPRESS_DB_USER -p$WORDPRESS_DB_PASSWORD -h$WORDPRESS_DB_HOST -e "CREATE DATABASE $WORDPRESS_DB_NAME CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;" && echo "Database $WORDPRESS_DB_NAME created successfully."
+          if ! mysql -u"$WORDPRESS_DB_USER" -p"$WORDPRESS_DB_PASSWORD" -h"$WORDPRESS_DB_HOST" -e "SHOW DATABASES LIKE '$WORDPRESS_DB_NAME';" | grep -q "$WORDPRESS_DB_NAME"; then
+            mysql -u"$WORDPRESS_DB_USER" -p"$WORDPRESS_DB_PASSWORD" -h"$WORDPRESS_DB_HOST" -e "CREATE DATABASE \`$WORDPRESS_DB_NAME\` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;" && echo "Database $WORDPRESS_DB_NAME created successfully."
           else
             echo "Database $WORDPRESS_DB_NAME already exists. Skipping."
           fi
