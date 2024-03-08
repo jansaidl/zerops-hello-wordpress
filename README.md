@@ -107,9 +107,9 @@ services:
       WORDPRESS_ADMIN_USER: admin
       WORDPRESS_ADMIN_PASSWORD: <@generateRandomString(<8>)>
 
-      WORDPRESS_DEBUG: "false"
-      WORDPRESS_DEBUG_DISPLAY: "false"
-      WORDPRESS_DEBUG_LOG: "false"
+      WORDPRESS_DEBUG: "true"
+      WORDPRESS_DEBUG_DISPLAY: "true"
+      WORDPRESS_DEBUG_LOG: "true"
 
       WORDPRESS_DB_HOST: ${db_hostname}
       WORDPRESS_DB_NAME: ${db_hostname}_dev
