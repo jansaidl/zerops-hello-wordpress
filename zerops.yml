@@ -28,6 +28,7 @@ zerops:
           wp db check --allow-root
           echo "after db check"
           wp plugin activate --all --allow-root
+          echo "after activate"
       deploy:
         - ./
 
@@ -60,5 +61,6 @@ zerops:
           wp db check --allow-root
           echo "after db check"
           wp plugin activate --all --allow-root
+          echo "after activate"
       deploy:
         - ./
