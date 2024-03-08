@@ -1,5 +1,4 @@
 <?php
-require_once __DIR__ . '/wp-content/vendor/autoload.php';
 
 // database
 define( 'DB_NAME', getenv('WORDPRESS_DB_NAME') );
@@ -52,5 +51,7 @@ if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/wp/' );
 }
+
+require_once __DIR__ . '/wp-content/vendor/autoload.php';
 
 require_once ABSPATH . '/wp-settings.php';
