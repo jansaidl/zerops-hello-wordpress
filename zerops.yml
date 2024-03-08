@@ -65,3 +65,9 @@ zerops:
       deploy:
         - ./
         - .git
+    run:
+      prepareCommands:
+        - git config --global --add safe.directory /var/www
+        - git config --global user.name "Aleš"
+        - git config --global user.email "ales@zerops.io"
+
