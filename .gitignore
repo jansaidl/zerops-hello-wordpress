@@ -8,6 +8,10 @@
 !wp-content/mu-plugins
 wp-content/plugins/*
 wp-content/themes/*
+wp-content/autoptimize_404_handler.php
+wp-content/cache
+wp-content/settings
+wp-content/uploads
 
 # Include manually managed plugins and themes
 !/wp-content/themes/twentytwentyfour/
