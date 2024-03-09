@@ -117,7 +117,7 @@ services:
       WORDPRESS_DB_USER: ${db_user}
       WORDPRESS_TABLE_PREFIX: wp_
 
-      WORDPRESS_STORAGE_ACCESS_KEY: ${storage_secretAccessKey}
+      WORDPRESS_STORAGE_ACCESS_KEY: ${storage_secretKey}
       WORDPRESS_STORAGE_BUCKET: ${storage_bucketName}
       WORDPRESS_STORAGE_KEY_ID: ${storage_accessKeyId}
       WORDPRESS_STORAGE_URL: ${storage_apiUrl}
