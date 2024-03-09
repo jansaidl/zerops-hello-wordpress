@@ -182,6 +182,7 @@ services:
   - hostname: storage
     type: object-storage
     objectStorageSize: 2
+    objectStoragePolicy: public-read
     pririty: 10
 
   - hostname: redis
